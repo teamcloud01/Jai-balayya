@@ -1,7 +1,7 @@
 # ye lo mera bhi @ultroidXTeam 
 # Kanged From @TroJanZheX
 # Thanks @DeletedFromEarth
-# y need to change "6695586027" or "1285768957" user_id with yr user_id (thx ki jaruRat.. nhi he !!! )
+# y need to change "6695586027" or "767250672" user_id with yr user_id (thx ki jaruRat.. nhi he !!! )
 
 import asyncio
 import re
@@ -102,7 +102,7 @@ async def give_filter(client, message):
             return
         else:
             return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ ✅\n\n📂 ꜰɪʟᴇꜱ ꜰᴏᴜɴᴅ : {str(total_results)}\n🔍 ꜱᴇᴀʀᴄʜ :</b> <code>{search}</code>\n\n<b>‼️ ᴛʜɪs ɪs ᴀ <u>sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ</u> sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\n📝 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ : 👇</b>",   
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 ᴊᴏɪɴ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=f"https://t.me/+GyyDy5betJNmYTBl")]]))
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 ᴊᴏɪɴ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=f"https://t.me/MovizTube_Group")]]))
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
@@ -113,7 +113,7 @@ async def pm_text(bot, message):
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
          text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/+GyyDy5betJNmYTBl")]])
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/MovizTube_Group")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -1401,7 +1401,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="http://t.me/MovieMingleNetBot")
+                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/MoviesLinkSearchBot2")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1426,7 +1426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/+GyyDy5betJNmYTBl")
+                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/MovizTube_Group")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1465,6 +1465,60 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(f"Hᴇʏ {user.first_name}, Yᴏᴜʀ Rᴇᴏ̨ᴜᴇsᴛ ɪs Uɴᴀᴠᴀɪʟᴀʙʟᴇ !", show_alert=True)
         else:
             await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
+
+    
+    elif lazyData.startswith("generate_stream_link"):
+        _, file_id = lazyData.split(":")
+        try:
+            user_id = query.from_user.id
+            username = query.from_user.mention 
+            log_msg = await client.send_cached_media(
+                chat_id=LOG_CHANNEL,
+                file_id=file_id,
+            )
+            fileName = {quote_plus(get_name(log_msg))}
+            lazy_stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+            lazy_download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+            hp_link = await get_shortlink(lazy_download)
+            ph_link = await get_shortlink(lazy_stream)
+            buttons = []
+            if await db.has_premium_access(user_id):                               
+                buttons = [[
+                    InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=lazy_download),
+                    InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿", url=lazy_stream)
+                ],[
+                    InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url='https://t.me/ultroid_official')
+                ]]
+            else:
+                await query.answer("🚸 ɴᴏᴛᴇ :\nᴀᴅ-ꜰʀᴇᴇ ꜱᴇʀᴠɪᴄᴇ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ.\n\nᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴄʜᴇᴄᴋ ᴘʟᴀɴꜱ.", show_alert=True)
+                await query.message.reply_text(
+                text="<b>‼️ ᴡᴀɴᴛ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ?\n\n✅ ᴘᴜʀᴄʜᴀꜱᴇ ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ᴇɴᴊᴏʏ ᴀᴅ-ꜰʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ.</b>",
+                quote=True,
+                disable_web_page_preview=True,                  
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='seeplans')]]))
+                buttons = [[
+                    InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=hp_link),
+                    InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿", url=ph_link)
+                ],[
+                    InlineKeyboardButton('❗ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ❗', url=STREAMHTO)
+                ]]
+    
+            query.message.reply_markup = query.message.reply_markup or []
+            query.message.reply_markup.inline_keyboard.pop(0)
+            query.message.reply_markup.inline_keyboard.insert(0, buttons)
+            await query.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
+            await log_msg.reply_text(
+                    text=f"#LinkGenrated\n\nIᴅ : <code>{user_id}</code>\nUꜱᴇʀɴᴀᴍᴇ : {username}\n\nNᴀᴍᴇ : {fileName}",
+                    quote=True,
+                    disable_web_page_preview=True,
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=hp_link),
+                                                        InlineKeyboardButton('ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', url=ph_link)]]))  
+        except Exception as e:
+            print(e)  # print the error message
+            await query.answer(f"⚠️ SOMETHING WENT WRONG \n\n{e}", show_alert=True)
+            return 
+
+     # don't change anything without contacting me @ultroidxTeam or @lazyDeveloperr
           
     elif query.data == "pagesn1":
         await query.answer(text=script.PAGE_TXT, show_alert=True)
@@ -1481,15 +1535,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
                     InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                 ],[
-                    InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat=''),
-                    InlineKeyboardButton('🕵 Go Inline', switch_inline_query=''),
                 ],[
+                    InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info"),
                     InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇꜱ •', callback_data='channels')
                 ],[
-                    InlineKeyboardButton('🔐 Close', callback_data='close_data')
+                    InlineKeyboardButton('• ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='help'),
+                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
+                ],[
+                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
                   ]]
-                  
+        
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
@@ -1525,7 +1580,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "upi_info":
         buttons = [[
-            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', user_id=int(1367267970))
+            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', user_id=int(6695586027))
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='purchase')
         ]]
@@ -1538,7 +1593,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "qr_info":
         buttons = [[
-            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', user_id=int(1367267970))
+            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', user_id=int(6695586027))
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='purchase')
         ]]
@@ -1551,7 +1606,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "seeplans":
         btn = [[
-            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', user_id=int(1367267970))
+            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', user_id=int(6695586027))
         ],[
             InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
         ]]
@@ -1706,7 +1761,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "other":
         buttons = [[
-            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(1367267970))
+            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(6695586027))
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='diamond'),
             InlineKeyboardButton('7 / 7', callback_data='pagesn1'),
@@ -1724,15 +1779,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     elif query.data == "channels":
         buttons = [[
-            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/MovieMingleNetNetwork')
+            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/ultroid_official')
         ],[
-            InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='https://t.me/+GyyDy5betJNmYTBl'),
-            InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/+wrXBfPvXWhswY2Y1')
+            InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='https://t.me/MovizTube_Group'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/MovizTube_Group')
         ],[
-            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/+GyyDy5betJNmYTBl')
+            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/MovizTube_Group')
         ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/MovieMingleNetNetwork')
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/ultroidxTeam')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1798,7 +1853,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton ('• ᴄʀᴇᴅɪᴛꜱ ᴛᴏ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ •', callback_data='credits'),
         ], [
-            InlineKeyboardButton('• ᴏᴡɴᴇʀ •', user_id=int(1367267970)),
+            InlineKeyboardButton('• ᴏᴡɴᴇʀ •', user_id=int(6695586027)),
             InlineKeyboardButton('• ꜱᴛᴀᴛꜱ •', callback_data='stats')
         ], [
             InlineKeyboardButton('🛰️ ʀᴇɴᴅᴇʀɪɴɢ ꜱᴛᴀᴛᴜꜱ ☁️',callback_data='rendr')
@@ -2014,7 +2069,7 @@ async def auto_filter(client, msg, spoll=False):
         if len(message.text) < 100:
             search = message.text
             m=await message.reply_sticker("CAACAgQAAxkBAAEKSxplArIUActk4ORQuFn3DHFvBqQCOgACBQMAAnJxFyVYcSIunXgGjjAE",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'Seaching for {search} 🔎', url=f"https://t.me/MovieMingleNetNetwork")]]) 
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'Seaching for {search} 🔎', url=f"https://t.me/MovizTube_Group")]]) 
             )
             search = search.lower()
             find = search.split(" ")
@@ -2045,7 +2100,7 @@ async def auto_filter(client, msg, spoll=False):
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
         m=await message.reply_sticker("CAACAgQAAxkBAAEKSxplArIUActk4ORQuFn3DHFvBqQCOgACBQMAAnJxFyVYcSIunXgGjjAE",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'Seaching for {search} 🔎', url=f"https://t.me/MovieMingleNetNetwork")]]) 
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'Seaching for {search} 🔎', url=f"https://t.me/MovizTube_Group")]]) 
         )
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
@@ -2250,7 +2305,7 @@ async def advantage_spell_chok(client, msg):
         if not g_s:
             reqst_gle = query.replace(" ", "+")
             button = [[
-                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/Team_Request")
+                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/MovizTube_Group")
             ]]
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
@@ -2287,7 +2342,7 @@ async def advantage_spell_chok(client, msg):
         if not movielist:
             reqst_gle = query.replace(" ", "+")
             button = [[
-                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/+GyyDy5betJNmYTBl")
+                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/MovizTube_Group")
             ]]
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
@@ -2328,7 +2383,7 @@ async def advantage_spell_chok(client, msg):
             logger.exception(e)
             reqst_gle = mv_rqst.replace(" ", "+")
             button = [[
-                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/+GyyDy5betJNmYTBl")
+                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/MovizTube_Group")
             ]]
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
@@ -2343,7 +2398,7 @@ async def advantage_spell_chok(client, msg):
         if not movies:
             reqst_gle = mv_rqst.replace(" ", "+")
             button = [[
-                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/+GyyDy5betJNmYTBl")
+                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/MovizTube_Group")
             ]]
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
